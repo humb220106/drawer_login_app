@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'm2.dart';
 import 'm6.dart';
+import 'message.dart';
 
 // Function to trigger app build
 void main() => runApp(const MyApp());
@@ -82,10 +83,14 @@ class HOME extends StatelessWidget {
             ),
 
             ListTile(
-              title: const Text(' Go Premium '),
+              title: const Text(' Message '),
               leading: const Icon(Icons.workspace_premium),
               onTap: () {
                 Navigator.pop(context);
+                  Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const MyApp()),
+                );
               },
             ),
             ListTile(
