@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(Message());
 }
 
-class MyApp extends StatelessWidget {
+class Message extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(home: ToastPage());

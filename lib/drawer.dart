@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'm2.dart';
 import 'm6.dart';
 import 'message.dart';
+import 'card.dart';
 
 // Function to trigger app build
 void main() => runApp(const MyApp());
@@ -95,9 +96,13 @@ class HOME extends StatelessWidget {
             ),
             ListTile(
               leading: const Icon(Icons.video_label),
-              title: const Text(' Saved Videos '),
+              title: const Text(' Card '),
               onTap: () {
                 Navigator.pop(context);
+                 Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const MyCard()),
+                );
               },
             ),
             ListTile(
