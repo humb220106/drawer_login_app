@@ -4,6 +4,7 @@ import 'm6.dart';
 import 'message.dart';
 import 'card.dart';
 
+
 // Function to trigger app build
 void main() => runApp(const MyApp());
 
@@ -110,6 +111,7 @@ class HOME extends StatelessWidget {
               title: const Text(' Edit Profile '),
               onTap: () {
                 Navigator.pop(context);
+                
               },
             ),
             ListTile(

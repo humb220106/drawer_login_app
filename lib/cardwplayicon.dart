@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
-void main() => runApp(const MyCard());
+import 'Editprofile.dart';
+import 'Logout.dart';
+
+void main() => runApp(const Myprofile());
 
 /// Main application widget
-class MyCard extends StatelessWidget {
-  const MyCard({super.key});
+class Myprofile extends StatelessWidget {
+  const Myprofile({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp( 
+    return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: const Text('Card')),
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.yellow,
         body: const MyCardWidget(),
       ),
     );
@@ -18,20 +21,20 @@ class MyCard extends StatelessWidget {
 }
 
 class MyCardWidget extends StatelessWidget {
-  const MyCardWidget({Key? key}) : super(key: key); // Null safety fix
+  const MyCardWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        width: 400,
-        height: 300,
+        width: 300,
+        height: 200,
         padding: const EdgeInsets.all(10.0),
         child: Card(
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(15.0),
           ),
-          color: Colors.lightBlue,
+          color: Colors.red,
           elevation: 10,
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -48,25 +51,33 @@ class MyCardWidget extends StatelessWidget {
                 ),
               ),
               OverflowBar(
-                alignment: MainAxisAlignment.center,
+                alignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
-                  ElevatedButton(
+                  ElevatedButton.icon(
                     onPressed: () {
-                      debugPrint("Play pressed");
+                     Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Edit()),
+                );
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.white,
+                      backgroundColor: Colors.green,
                     ),
-                    child: const Text('Play'),
+                    icon: const Icon(Icons.play_arrow, color: Colors.white),
+                    label: const Text('Play'),
                   ),
-                  ElevatedButton(
+                  ElevatedButton.icon(
                     onPressed: () {
-                      debugPrint("Pause pressed");
+                      Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const logout()),
+                );
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.white,
+                      backgroundColor: Colors.orange,
                     ),
-                    child: const Text('Pause'),
+                    icon: const Icon(Icons.pause, color: Colors.white),
+                    label: const Text('Pause'),
                   ),
                 ],
               ),
@@ -76,4 +87,4 @@ class MyCardWidget extends StatelessWidget {
       ),
     );
   }
-}
+} 
