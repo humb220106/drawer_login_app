@@ -40,6 +40,8 @@ dependencies:
 
   chewie: ^1.12.1
 
+  audioplayers: ^6.0.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -70,6 +72,9 @@ flutter:
 
   #for videos
     - assets/media.mp4
+
+  #for audio
+    - assets/audio/whylove.mp3
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
