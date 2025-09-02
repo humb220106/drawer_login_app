@@ -6,6 +6,8 @@ void main() {
 }
 
 class Message extends StatelessWidget {
+  const Message({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(home: ToastPage());
@@ -13,6 +15,8 @@ class Message extends StatelessWidget {
 }
 
 class ToastPage extends StatelessWidget {
+  const ToastPage({super.key});
+
   // Function to show toast
   void showToast() {
     Fluttertoast.showToast(

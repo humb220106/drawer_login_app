@@ -18,7 +18,7 @@ class MyCard extends StatelessWidget {
 }
 
 class MyCardWidget extends StatelessWidget {
-  const MyCardWidget({Key? key}) : super(key: key); // Null safety fix
+  const MyCardWidget({super.key}); // Null safety fix
 
   @override
   Widget build(BuildContext context) {

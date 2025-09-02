@@ -11,7 +11,7 @@ void main() => runApp(const MyApp());
 class MyApp extends StatelessWidget {
   final appTitle = 'Book Face';
 
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
 class HOME extends StatelessWidget {
   final String title;
 
-  const HOME({Key? key, required this.title}) : super(key: key);
+  const HOME({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {

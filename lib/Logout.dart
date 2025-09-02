@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 // for drawer navigation
 
 class logout extends StatelessWidget {
-  const logout({Key? key}) : super(key: key);
+  const logout({super.key});
 
   @override
   Widget build(BuildContext context) {

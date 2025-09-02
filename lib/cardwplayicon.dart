@@ -21,7 +21,7 @@ class Myprofile extends StatelessWidget {
 }
 
 class MyCardWidget extends StatelessWidget {
-  const MyCardWidget({Key? key}) : super(key: key);
+  const MyCardWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

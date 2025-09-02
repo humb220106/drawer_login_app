@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 // for drawer navigation
 
 class M6Page extends StatelessWidget {
-  const M6Page({Key? key}) : super(key: key);
+  const M6Page({super.key});
 
   @override
   Widget build(BuildContext context) {

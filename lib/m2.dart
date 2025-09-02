@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 // for drawer navigation
 
 class M2Page extends StatelessWidget {
-  const M2Page({Key? key}) : super(key: key);
+  const M2Page({super.key});
 
   @override
   Widget build(BuildContext context) {

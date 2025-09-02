@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 // for drawer navigation
 
 class Edit extends StatelessWidget {
-  const Edit({Key? key}) : super(key: key);
+  const Edit({super.key});
 
   @override
   Widget build(BuildContext context) {
